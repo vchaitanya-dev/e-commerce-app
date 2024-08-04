@@ -1,0 +1,86 @@
+@import "../../variables.scss";
+@import "../../responsive.scss";
+.linksection{
+    background: #160e0b;
+    width: 100%;
+    height: 40vh;
+    padding: 4vh;
+    .link{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .menusection{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            h2{
+                font-family: $header-text;
+                font-size: 24px;
+                color:#fff;
+            }
+            .urls{
+                text-decoration: none;
+                font-family: $main-text;
+                color:#fff;
+                font-size: 20px;
+            }
+        }
+        .mapsection{
+            @include sm {
+                display: none;
+            }
+            width: 600px;
+            height: 40vh;
+            .leaflet-container{
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+        }
+        .contactsection{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 4px;
+            h2{
+                font-family: $header-text;
+                font-size: 24px;
+                color:#fff;
+            }
+            .section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;    
+                img{
+                    width: 20px;
+                    height: 20px;
+                    color: #fff;
+                    fill: #fff;
+                    background: #fff;
+                    padding: 2px;
+                    border-radius: 10px;
+                }
+                p{
+                    font-family: $main-text;
+                    font-size: 16px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.copyrightsection{
+    width: auto;
+    height: 10vh;
+    p{
+        font-size: 22px;
+        text-align: center;
+        font-family: $header-text;
+    }
+}

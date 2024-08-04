@@ -1,0 +1,125 @@
+@import "../../variables.scss";
+@import "../../responsive.scss";
+.card{
+background-color:$four-color !important;
+height: 100vh !important;
+.signin-card{
+    background-color: $thrid-color;
+    padding: 1.5%;
+    border-radius: 20px;
+    
+    h2{
+        font-size: 3rem;
+        font-family: $header-text;
+        color:$first-color;
+        text-align: center;
+        margin-top: -2%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 40px;
+        .email-group{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: 11%;
+            label{
+                font-size: 1.5rem;
+                color:$first-color;
+            }
+            input{
+                width: 400px;
+                height:5vh;
+                outline:none;
+                border: 2px solid $thrid-color;
+                border-radius: 20px;
+                background:$first-color;
+                padding: 2%;
+                color:$thrid-color;
+                text-align: center;
+            }
+        }
+        .password-group{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            label{
+                font-size: 1.5rem;
+                color:$first-color;
+            }
+            .show{
+                display: flex;
+               input{
+                width: 350px;
+                height:5vh;
+                outline:none;
+                border: 2px solid $thrid-color;
+                border-radius: 20px;
+                background:$first-color;
+                padding: 2%;
+                color:#000;
+                text-align: center;
+               }
+               img{
+                width: 25px;
+                margin-left:-40px;
+               }
+
+            }
+            .forgot{
+                text-decoration: none;
+                font-size: 16px;
+                font-family: $main-text;
+                color:$first-color;
+            }
+        }
+        button{
+            width:100px;
+            height:4vh;
+            background:$first-color;
+            outline:none;
+            border: 1px solid $four-color;
+            color:$four-color;
+            font-family: $main-text;
+            font-size: 18px;
+            border-radius: 10px;
+            &:hover{
+                background: $four-color;
+                color:$first-color;
+            }
+        }
+    }
+    .newUserSection{
+        margin-top: -30px;
+        h3{
+            font-size: 20px;
+            font-family: $header-text;
+            color:$first-color;
+            text-align: center;
+        }
+       .signupsection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        h4{
+            font-size: 16px;
+            font-family: $header-text;
+            color:$first-color;
+        }
+        .signup{
+            text-decoration: none;
+          color:$first-color;
+          font-family: $main-text;
+          font-size: 20px;
+          &:hover{
+            border-bottom: 2px solid $four-color;
+          }
+        }
+     }
+}}
+}

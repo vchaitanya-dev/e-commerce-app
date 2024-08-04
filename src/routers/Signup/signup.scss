@@ -1,0 +1,165 @@
+@import "../../variables.scss";
+
+.card {
+  background-color:$four-color !important;
+height: 100vh !important;
+.signup-card{
+  background-color: $thrid-color;
+    padding: 1%;
+    border-radius: 20px;
+    width: 50%;
+    h2{
+      font-size: 3rem;
+      font-family: $header-text;
+      color:$first-color;
+      text-align: center;
+  }
+    form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 40px;
+      margin-left: 2%;
+      .form-group{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        .name-group{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          gap: 20px;
+    
+          label{
+            font-size: 1.5rem;
+            color:$first-color;
+            
+          }
+          input{
+            width: 300px;
+            height:5vh;
+            outline:none;
+            border: 2px solid $thrid-color;
+            border-radius: 20px;
+            background:$first-color;
+            padding: 2%;
+            color:#000;
+            text-align: start;
+          }
+        }
+        .email-group{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          gap: 20px;
+          label{
+            font-size: 1.5rem;
+            color:$first-color;
+          }
+          input{
+            width: 300px;
+            height:5vh;
+            outline:none;
+            border: 2px solid $thrid-color;
+            border-radius: 20px;
+            background:$first-color;
+            padding: 2%;
+            color:#000;
+            text-align: start;
+          }
+        }
+      }
+    .password-group{
+      display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            label{
+              font-size: 1.5rem;
+              color:$first-color;
+            }
+            .show{
+              display: flex;
+             input{
+              width: 400px;
+              height:5vh;
+              outline:none;
+              border: 2px solid $thrid-color;
+              border-radius: 20px;
+              background:$first-color;
+              padding: 2%;
+              color:#000;
+              text-align: start;
+             }
+             img{
+              width: 25px;
+              margin-left:-40px;
+             }
+            }
+            p{
+              text-align: justify;
+              color:$first-color;
+              font-size: 12px;
+              font-family: $main-text;
+            }
+    }
+
+    }
+    button{
+      width:80px;
+      height:4vh;
+      background:$first-color;
+      outline:none;
+      border: 1px solid $four-color;
+      color:$four-color;
+      font-family: $main-text;
+      font-size: 18px;
+      border-radius: 10px;
+      margin-left: 2%;
+      &:hover{
+        background:$four-color;
+        color:$first-color;
+      }
+    }
+    .signInSection{
+      margin-top: -10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:2px;
+     h3{
+      color:$first-color;
+      margin-top: -15px;
+      font-family: $main-text;
+      font-size: 20px;
+     }
+      .signIn{
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        h4{
+          color:$first-color;
+          font-family: $main-text;
+          font-size: 20px;
+        }
+        .signup{
+          text-decoration: none;
+          color:$first-color;
+          font-family: $main-text;
+          font-size: 20px;
+          &:hover{
+            border-bottom: 2px solid $four-color;
+          }
+        }
+      }
+    }
+}
+}

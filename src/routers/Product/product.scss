@@ -1,0 +1,107 @@
+@import "../../variables.scss";
+.container{
+    .back{
+        margin-left: 4%;
+        text-decoration: none;
+        font-size: 24px;
+        color:$second-color;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+        margin: 5%;
+        // flex-wrap: wrap;
+        img{
+            width: 400px;
+            height: 300px;
+           object-fit: contain;
+        }
+        .textInfo{
+            h1{
+                font-size: 24px;
+                color:#000;
+                font-family: $header-text;
+            }
+            .buyerSection{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                gap: 40px;
+                p{
+                    color:$four-color;
+                    font-size: 26px;
+                    strong{
+                        color: $second-color;
+                        font-size: 28px;
+                    }
+                }
+                button{
+                    width: 100px;
+                    height: 6vh;
+                    background:$four-color;
+                    outline:none;
+                    border: none;
+                    border-radius: 30px;
+                    color:#fff;
+                }
+            }
+
+        }
+    }
+    .recommendContainer{
+        h3{
+            margin-left: 4px;
+            color:$second-color;
+        }
+        .productWrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+            .productContainer{
+                background:#eeeeee;
+                width: 240px;
+                height: 270px;
+                padding: 17px;
+                img{
+                    width: 180px;
+                    height: 180px;
+                    object-fit: contain;
+                    margin-left: 15%;
+                }
+                p{
+                    font-size: 14px;
+                    font-family: $main-text;
+                    text-align: center;
+                    color:#000;
+                }
+                .recommendInfo{
+                    margin-top: -10%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    h3{
+                        font-size: 20px;
+                        font-family: $header-text;
+                        color:$second-color;
+                    }
+                    .link{
+                        background:$four-color;
+                        outline:none;
+                        padding:3%;
+                        border: none;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+}

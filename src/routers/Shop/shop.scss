@@ -1,0 +1,81 @@
+@import "../../variables.scss";
+.shopcontainer{
+    width: 100%;
+    h1{
+        font-size: 2rem;
+        color:$second-color;
+        font-family: $header-text;
+        font-weight: 600;
+        text-align: center;
+    }
+    .shop{
+        display: flex;
+        .left{
+            h2{
+                text-align: center;
+                font-size: 24px;
+                color:$second-color;
+                font-family:$header-text;
+            }
+            flex: 1;
+            .menulink{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                gap: 4px;
+                margin-left: 3%;
+
+                select{
+                    width: 100px;
+                    text-align: center;
+                    padding: 4px;
+                    background: $second-color;
+                    outline: none;
+                    border: none;
+                    color:white;
+                    option{
+                        background: $second-color;
+                        color:white;
+                        &:active{
+                            background: $four-color;
+                        }
+                        &:hover{
+                            background: $four-color;
+                        }
+                    }
+
+                }
+                .buttongroup{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                button{
+                    width: 80px;
+                    outline: none;
+                    background-color:$four-color;
+                    padding: 2px;
+                    text-align: justify;
+                    color:$first-color;
+                }
+                }
+            }
+        }
+        .right{
+            flex:3;
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                flex-wrap: wrap;
+            }
+            }}
+
+
+             
+        
+    
+        }
